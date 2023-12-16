@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ECF4D6;
+  color: white;
+}
+
+.container {
+  background-color: #265073;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #333;
+}
+
+.displayText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.displayText .mainDisplayText {
+  background-color: #ECF4D6;
+  color: #265073;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  /*font-weight: 400;*/
+  font-size: 20px;
+  letter-spacing: 10px;
+  min-width: 300px;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.displayText .refreshButton {
+  background-color: #ECF4D6;
+  color: #265073;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.displayText .refreshButton:hover {
+  transform: scale(105%);
+}
+
+.inputForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputForm .errorText {
+  font-weight: 600;
+  /*color: greenyellow;*/
+}
+
+.inputForm .errorText.hidden {
+  display: none;
+}
+
+.inputForm input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #222;
+}
+
+.inputForm .inputCaptcha {
+  padding: 10px 20px;
+  color: #265073;
+  font-weight: 500;
+}
+
+.inputForm .buttonSubmit {
+  background-color: white;
+  font-weight: 600;
+  color: #265073;
+}
+
+.inputForm .buttonSubmit:hover {
+  background-color: #cdd3bb;
+}
